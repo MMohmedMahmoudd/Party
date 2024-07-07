@@ -50,11 +50,17 @@ window.onload = function() {
     }
     var maxLength = 100;
     $('textarea').keyup(function() {
-      var length = $(this).val().length;
-      var AmountLeft = maxLength-length;
-      if(AmountLeft<=0)
+    var length = $(this).val().length;
+    var AmountLeft = maxLength-length;
+    if(AmountLeft<=0)
                 {
-                     $("#char").text("your available character finished").css('cssText',`background-color:green;color:#fff;padding:15px;`).append(' <i class="bi bi-check-circle-fill fs-5"></i>');
+                    $("textarea").css('cssText',`color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #198754;
+    outline: 0;
+    box-shadow: rgb(25 135 84 / 34%) 0px 0px 0px 0.25rem;`)
+
+                    $("#char").text("your available character finished").css('cssText',`background-color:green;color:#fff;padding:15px;`).append(' <i class="bi bi-check-circle-fill fs-5"></i>');
 
                     $("#num").empty()
                 }
