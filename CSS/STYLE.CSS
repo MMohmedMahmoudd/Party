@@ -1,0 +1,191 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+}
+main{
+    height: 100rem;
+}
+nav.navbar{
+    width: 13%;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+
+}
+nav.navbar .container{
+    height: 100%;
+}
+nav.navbar .container .navbar-collapse{
+    height: 100%;
+}
+
+section.Home{
+    position: relative;
+    height: 40rem;
+    background: url(../events-heavenly-header.jpg) no-repeat ;
+    background-size: cover;
+}
+section.Home::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(214, 46, 51 , 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    
+}
+section.Home .container{
+    height: 40rem;
+    position: relative;
+    z-index: 2;
+
+}
+.nav-link{
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+h2{
+    font-size: 4rem;
+}
+.navbar-expand-lg .navbar-nav{
+    flex-direction: column;
+    row-gap: 2rem;
+    height: 100%;
+    
+}
+.navbar-nav a.closebtn{
+font-size: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 5rem;
+text-decoration:none ;
+color: #fff;
+transition: all 0.5s;
+
+}
+.nav-link:focus, .nav-link:hover{
+    color:rgba(214, 46, 51 , 0.4);
+}
+.navbar-nav a.closebtn:hover,.navbar-nav a.closebtn:focus{
+    color:rgba(214, 46, 51 , 0.4);
+}
+
+div.open{
+    width: 95% ;
+
+}
+.slider .info{
+    background-color: #ccc;
+    padding: 10px;
+    display: none;
+}
+.slider .info p{
+    color: #000;
+    text-align: center;
+}
+section.slider{
+    /* height: 30rem; */
+}
+.container.slider {
+    width: 50%;
+    /* height: 25rem; */
+    overflow: visible;
+}
+.container.slider h3{
+    padding: 10px ;
+    width: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+section.Timer{
+    background: url(../invitation-2508607__340.jpg) center center no-repeat;
+    background-size: cover;
+    height: 20rem;
+
+}
+section.Timer .container{
+    height: 10rem;
+    width: 60%;
+}
+
+section.Timer::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(214, 46, 51 , 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+.Timer .card{
+    height: 10rem;
+    background: transparent;
+    border-color: #fff;
+}
+#Contact{
+    height: 40rem;
+}
+#Contact a.brand{
+width: 2.5rem;
+height: 2.5rem;
+background-color: transparent;
+border: 1px solid #000;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: #666;
+transition: all 1s;
+
+}
+#Contact a.brand:hover,#Contact a.brand:focus{
+    color: #fff;
+    background-color: #ff0000;
+}    
+.Contact .papa h2{
+align-self: flex-start;
+}
+.Contact .container{
+    width: 60%;
+}
+.papa h2{
+    font-size: 35px;
+    color: #444;
+}
+.papa p{
+    color: #777;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+textarea{
+    height: 200px;
+
+}
+.char{
+    align-self: flex-start;
+
+}
+.but{
+    align-self: flex-start;
+
+}
+span#num{
+    color: #ff0000;
+}
+.Contact h3 strong{
+font-size:20px;
+}
