@@ -1,44 +1,39 @@
 {/* <refrence type="../jquery-3.7.1.min.js"/> */}
-$('.closebtn').on('click',function(){
-    if ($(window).width() <= 900) {
-        // Apply changes for small devices
-        $('nav.navbar').animate({width:'0'},500);
-        $('div.open').animate({translate:'0'},500);
-        $('.Home .heading').animate({translate:'-20px'},500)
-        $('nav.navbar').animate({width:'0'},500)
-        $('.nav-link').animate({width:'0'},500)
-        // $('section .container').animate({margin:'auto'},500)
-
-    } else {
-        // Revert changes for larger devices
-        $('nav.navbar').animate({width:'0'},500);
-        $('div.open').animate({translate:'0'},500);
-        $('.Home .heading').animate({translate:'-20px'},500)
-        $('nav.navbar').animate({width:'0'},500)
-        // $('nav.navbar').css('cssText',`display:none;!important`,500)
-        $('.nav-link').animate({width:'0'},500)
-        // $('section .container').animate({margin:'auto'},500)
-
-    }
-
-})
 $('#Open').on('click',function(){
         if ($(window).width() <= 900) {
-            // Apply changes for small devices
             $('nav.navbar').animate({width:'30%'},500)
-            $('div.open').animate({translate:'9rem'},500);
-            $('.Home .heading').animate({translate:'18px'},500)
-            // $('section .container').animate({margin:'5%'},500)
+            $('div.open').animate({translate:'15rem'},500);
+            // $('.Home .heading').animate({translate:'18px'},500)
+            $('section .container').animate({marginRight:'5%'},500)
         } else {
-            // Revert changes for larger devices
             $('nav.navbar').animate({width:'13%'},500);
             $('div.open').animate({translate:'16rem'},500);
-            $('.Home .heading').animate({translate:'20px'},500)
+            // $('.Home .heading').animate({translate:'20px'},500)
             $('.nav-link').animate({width:'100%'},100)
             $('.closebtn').animate({width:'20%'},500)
-            // $('section .container').animate({margin:'5%'},500)
+            $('section .container').animate({marginRight:'5%'},500)
         }
 })
+$('.closebtn').on('click',function(){
+    if ($(window).width() <= 900) {
+        $('nav.navbar').animate({width:'0'},500)
+        $('div.open').animate({translate:'0'},500)
+        // $('.Home .heading').animate({translate:'-5px'},500)
+        $('nav.navbar').animate({width:'0'},500)
+        $('.nav-link').animate({width:'0'},500)
+        $('section .container').animate({marginRight:'25%'},500)
+        $('section.Timer .container').animate({marginRight:'20%'},500)
+    } else {
+        $('nav.navbar').animate({width:'0'},500)
+        $('div.open').animate({translate:'0'},500)
+        // $('.Home .heading').animate({translate:'-20px'},500)
+        $('nav.navbar').animate({width:'0'},500)
+        $('.nav-link').animate({width:'0'},500)
+        $('section .container').animate({marginRight:'25%'},500)
+        $('.Timer .container').animate({marginRight:'20%'},500)
+    }
+})
+
 // ___
 $("#nav-link").click(function(){
     
