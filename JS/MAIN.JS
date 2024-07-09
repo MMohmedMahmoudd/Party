@@ -7,7 +7,7 @@ $('.closebtn').on('click',function(){
         $('.Home .heading').animate({translate:'-20px'},500)
         $('nav.navbar').animate({width:'0'},500)
         $('.nav-link').animate({width:'0'},500)
-        $('section .container').animate({translate:'0'},500)
+        // $('section .container').animate({margin:'auto'},500)
 
     } else {
         // Revert changes for larger devices
@@ -17,7 +17,7 @@ $('.closebtn').on('click',function(){
         $('nav.navbar').animate({width:'0'},500)
         // $('nav.navbar').css('cssText',`display:none;!important`,500)
         $('.nav-link').animate({width:'0'},500)
-        $('section .container').animate({translate:'0'},500)
+        // $('section .container').animate({margin:'auto'},500)
 
     }
 
@@ -28,7 +28,7 @@ $('#Open').on('click',function(){
             $('nav.navbar').animate({width:'30%'},500)
             $('div.open').animate({translate:'9rem'},500);
             $('.Home .heading').animate({translate:'18px'},500)
-            $('section .container').animate({translate:'5rem'},500)
+            // $('section .container').animate({margin:'5%'},500)
         } else {
             // Revert changes for larger devices
             $('nav.navbar').animate({width:'13%'},500);
@@ -36,7 +36,7 @@ $('#Open').on('click',function(){
             $('.Home .heading').animate({translate:'20px'},500)
             $('.nav-link').animate({width:'100%'},100)
             $('.closebtn').animate({width:'20%'},500)
-            $('section .container').animate({translate:'5rem'},500)
+            // $('section .container').animate({margin:'5%'},500)
 
 
         }
