@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="CSS/STYLE.CSS">
 </head>
 <body>
-    <main>
-        <nav class="navbar navbar-expand-lg nav-bg position-fixed top-0 z-3 col-md-6 col-lg-9 justify-content-center ">
-            <div class="container rounded-4 mt-5">
-                <div class="collapse small navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 menu small w-100">
+    <main class="d-flex justify-content-between w-100 flex-column">
+        <nav class="navbar navbar-expand-lg nav-bg position-fixed top-0  col-md-6 col-lg-9 justify-content-center ">
+            <div class="container  rounded-4 mt-5">
+                <div class=" Parentnav w-100 " >
+                    <ul class="navbar-nav  mb-2 mb-lg-0 menu small w-100">
                         <li class=" close position-relative w-100 d-flex justify-content-end align-items-center">
                             <a href="#" class="closebtn ">×</a>
                         </li>
@@ -40,19 +40,21 @@
 
         <section class="Home" id="Home">  
             <div class="container d-flex justify-content-center align-items-center flex-column text-light">
-                <h2>ُEgyption Party</h2>
-                <p class="fs-2">Let's have Fun</p>
-                <div class="open d-flex justify-content-start align-items-center">
-                    <button class="navbar-toggler" type="button">
-                    <span id="Open" class="fs-2"> <i class="fa-solid fa-bars fs-2"> </i> Open</span>
-                    </button>        
+                <div class="heading d-flex justify-content-center align-items-center flex-column mb-5">
+                    <h2 class="text-center">ُEgyption Party</h2>
+                    <p class="fs-3 text-center ">Let's have Fun</p>    
                 </div>
+            </div>
+            <div class="open d-flex justify-content-start align-items-center">
+                <button type="button" class="btn text-light bg-transparent">
+                <span id="Open" class="fs-2"> <i class="fa-solid fa-bars fs-2"> </i> Open</span>
+                </button>        
             </div>
         </section>
         <section class="slider d-flex justify-content-center align-items-center">
             <div class="container slider py-5 my-5">
                 <h3 class="head">ٍSinger one</h3>
-                <div class="info">
+                <div class="info slideone">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 </div>
                 <h3 class="head">Singer two</h3>
@@ -70,9 +72,9 @@
             </div>
 
         </section>
-        <section class="Timer position-relative d-flex justify-content-center align-items-center" id="Duration">
-            <div class="container">
-                <div class="row">
+        <section class="Timer py-5 my-5 position-relative d-flex justify-content-center align-items-center" id="Duration">
+            <div class="container py-5 my-5">
+                <div class="row row-gap-4">
                     <div class="col-md-3">
                         <div class="card d-flex justify-content-center align-items-center position-relative z-3">
                             <h4 class="Days text-light"></h4>
@@ -97,7 +99,7 @@
             </div>
         </section>
         <section class="Contact my-5 py-5 d-flex justify-content-center align-items-center " id="Contact">
-            <div class="container my-5 py-5 d-flex justify-content-center align-items-center flex-column row-gap-5">
+            <div class="container  d-flex justify-content-center align-items-center flex-column row-gap-5">
                 <div class="papa mt-5 pt-5 w-100 d-flex justify-content-center align-items-center flex-column">
                     <h2 class="text-start fs-1 fw-bold">Join Us</h2>
                     <p class="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

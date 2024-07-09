@@ -1,21 +1,49 @@
 {/* <refrence type="../jquery-3.7.1.min.js"/> */}
 $('.closebtn').on('click',function(){
-    $('nav.navbar').animate({width:'0'},500)
-    // $('nav.navbar').css('cssText',`display:none;!important`,500)
-    $('.nav-link').animate({width:'0'},500)
-    $('div.open').animate({width:'140%'},500)
-    $('h2').animate({translate:'-50px'},500)
-    $('.Home P').animate({translate:'-50px'},500)
-})
-$('#Open').on('click',function(){
-    $('nav.navbar').animate({width:'13%'},500)
-    $('.nav-link').animate({width:'100%'},100)
-    $('div.open').animate({width:'100%'},500)
-    $('.closebtn').animate({width:'020%'},500)
-    $('h2').animate({translate:'20px'},500)
-    $('.Home P').animate({translate:'20px'},500)
+    if ($(window).width() <= 900) {
+        // Apply changes for small devices
+        $('nav.navbar').animate({width:'0'},500);
+        $('div.open').animate({translate:'0'},500);
+        $('.Home .heading').animate({translate:'-20px'},500)
+        $('nav.navbar').animate({width:'0'},500)
+        $('.nav-link').animate({width:'0'},500)
+        $('section .container').animate({translate:'0'},500)
+
+    } else {
+        // Revert changes for larger devices
+        $('nav.navbar').animate({width:'0'},500);
+        $('div.open').animate({translate:'0'},500);
+        $('.Home .heading').animate({translate:'-20px'},500)
+        $('nav.navbar').animate({width:'0'},500)
+        // $('nav.navbar').css('cssText',`display:none;!important`,500)
+        $('.nav-link').animate({width:'0'},500)
+        $('section .container').animate({translate:'0'},500)
+
+    }
 
 })
+$('#Open').on('click',function(){
+        if ($(window).width() <= 900) {
+            // Apply changes for small devices
+            $('nav.navbar').animate({width:'30%'},500)
+            $('div.open').animate({translate:'9rem'},500);
+            $('.Home .heading').animate({translate:'18px'},500)
+            $('section .container').animate({translate:'5rem'},500)
+        } else {
+            // Revert changes for larger devices
+            $('nav.navbar').animate({width:'13%'},500);
+            $('div.open').animate({translate:'16rem'},500);
+            $('.Home .heading').animate({translate:'20px'},500)
+            $('.nav-link').animate({width:'100%'},100)
+            $('.closebtn').animate({width:'20%'},500)
+            $('section .container').animate({translate:'5rem'},500)
+
+
+        }
+
+
+})
+
 $('.container .head').on('click',function(){
     $('.container .info').not($(this).next()).slideUp(500);
     $(this).next().slideToggle(500);
