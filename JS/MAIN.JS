@@ -37,13 +37,20 @@ $('#Open').on('click',function(){
             $('.nav-link').animate({width:'100%'},100)
             $('.closebtn').animate({width:'20%'},500)
             // $('section .container').animate({margin:'5%'},500)
-
-
         }
-
-
+})
+// ___
+$("#nav-link").click(function(){
+    
+    var sectionId= $(this).attr("href");
+    
+    var positionOfSection = $(sectionId).offset().top;
+    
+    $("html , body").animate({scrollTop:positionOfSection},2000);
+    
 })
 
+// ___
 $('.container .head').on('click',function(){
     $('.container .info').not($(this).next()).slideUp(500);
     $(this).next().slideToggle(500);

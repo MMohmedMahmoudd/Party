@@ -180,7 +180,7 @@ section.Timer .card{
     border-color: #fff;
     z-index: 9 !important;
 }
-#Contact a.brand{
+.Contact a.brand{
 width: 2.5rem;
 height: 2.5rem;
 background-color: transparent;
@@ -194,7 +194,7 @@ color: #666;
 transition: all 1s;
 
 }
-#Contact a.brand:hover,#Contact a.brand:focus{
+.Contact a.brand:hover,#Contact a.brand:focus{
     color: #fff;
     background-color: #ff0000;
 }    
