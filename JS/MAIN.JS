@@ -1,17 +1,39 @@
 {/* <refrence type="../jquery-3.7.1.min.js"/> */}
+// $('#Open').on('click',function(){
+//         if ($(window).width() <= 900) {
+//             $('nav.navbar').animate({width:'30%'},500);
+//             $('div.open').animate({translate:'10rem'},500);
+//             // $('.Home .heading').animate({translate:'18px'},500)
+//             $('section .container').animate({marginRight:'5%'},500);
+//         } else {
+//             $('nav.navbar').animate({width:'13%'},500);
+//             $('div.open').animate({translate:'16rem'},500);
+//             // $('.Home .heading').animate({translate:'20px'},500)
+//             $('.nav-link').animate({width:'100%'},100);
+//             $('.closebtn').animate({width:'20%'},500);
+//             $('section .container').animate({marginRight:'5%'},500);
+//         }
 $('#Open').on('click',function(){
-        if ($(window).width() <= 900) {
-            $('nav.navbar').animate({width:'30%'},500)
-            $('div.open').animate({translate:'15rem'},500);
+        if ($(window).width() <= 600) {
+            $('nav.navbar').animate({width:'30%'},500);
+            $('div.open').animate({translate:'10rem'},500);
             // $('.Home .heading').animate({translate:'18px'},500)
-            $('section .container').animate({marginRight:'5%'},500)
-        } else {
-            $('nav.navbar').animate({width:'13%'},500);
+            $('section .container').animate({marginRight:'5%'},500);
+        } else if($(window).width()<= 900 ){
             $('div.open').animate({translate:'16rem'},500);
+            $('nav.navbar').animate({width:'30%'},500);
+            $('section .container').animate({marginRight:'5%'},500);
+        }else if($(window).width() <=1200){
+            $('div.open').animate({translate:'22rem'},500);
+            $('nav.navbar').animate({width:'30%'},500);
+            $('section .container').animate({marginRight:'5%'},500);
+        }else {
+            $('nav.navbar').animate({width:'13%'},500);
+            $('div.open').animate({translate:'20rem'},500);
             // $('.Home .heading').animate({translate:'20px'},500)
-            $('.nav-link').animate({width:'100%'},100)
-            $('.closebtn').animate({width:'20%'},500)
-            $('section .container').animate({marginRight:'5%'},500)
+            $('.nav-link').animate({width:'100%'},100);
+            $('.closebtn').animate({width:'20%'},500);
+            $('section .container').animate({marginRight:'5%'},500);
         }
 })
 $('.closebtn').on('click',function(){

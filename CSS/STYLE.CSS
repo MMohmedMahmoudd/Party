@@ -105,6 +105,9 @@ div.open{
         width:60%;
     
     }
+    section.Home .container{
+    margin-bottom: 2rem;
+    }
     
 }
 @media(max-width:1710px){
@@ -136,9 +139,6 @@ div.open{
 .slider .info p{
     color: #000;
     text-align: center;
-}
-section.slider{
-    /* height: 30rem; */
 }
 .container.slider {
     width: 50%;
