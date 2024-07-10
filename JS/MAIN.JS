@@ -27,9 +27,13 @@ $('#Open').on('click',function(){
             $('div.open').animate({translate:'22rem'},500);
             $('nav.navbar').animate({width:'30%'},500);
             $('section .container').animate({marginRight:'5%'},500);
+        }else if($(window).width() <=1500){
+            $('div.open').animate({translate:'28rem'},500);
+            $('nav.navbar').animate({width:'30%'},500);
+            $('section .container').animate({marginRight:'5%'},500);
         }else {
             $('nav.navbar').animate({width:'13%'},500);
-            $('div.open').animate({translate:'20rem'},500);
+            $('div.open').animate({translate:'18rem'},500);
             // $('.Home .heading').animate({translate:'20px'},500)
             $('.nav-link').animate({width:'100%'},100);
             $('.closebtn').animate({width:'20%'},500);
